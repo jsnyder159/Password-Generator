@@ -23,4 +23,4 @@ length of the password (with min/max values in window). If the parameters requir
 
 - Finally the store items for your password are compared against the length selected at the start.  This is then subtracted from one another giving me the difference between the two.  Then a for loop is utilized to run through the array that was storing all the options selected for the password randomly.  Adding one each time until the password meets the length required.
 
-- Once completed the password meeting the 1 of each selected option and length selected with randomly generated characters is displayed inside the box on the screen.
+- Once completed the password meeting the 1 of each selected option and length selected with randomly generated characters is displayed inside the box on the screen.git 
