@@ -24,45 +24,45 @@ function generatePassword() {
   }
 
   // This gives prompt special char choice, adds 1 random one to passwordString, and the whole array to userChoice
-  let specOpt = confirm("Do you want special characters?")
-  if (specOpt === true){
-    userChoice.push.apply(userChoice, special);
-    randomCho = special[Math.floor(Math.random()*special.length)];
-    passwordString += randomCho;
-  }
+    let specOpt = confirm("Do you want special characters?")
+    if (specOpt === true){
+      userChoice.push.apply(userChoice, special);
+      randomCho = special[Math.floor(Math.random()*special.length)];
+      passwordString += randomCho;
+    }
 
    // This gives prompt lower case letter choice, adds 1 random one to passwordString, and the whole array to userChoice
-  let lowerOpt = confirm("Do you want lower case characters?")
-  if (lowerOpt === true){
-    userChoice.push.apply(userChoice, lowerAlph);
-    randomCho = lowerAlph[Math.floor(Math.random()*lowerAlph.length)];
-    passwordString += randomCho;
-  }
+    let lowerOpt = confirm("Do you want lower case characters?")
+    if (lowerOpt === true){
+      userChoice.push.apply(userChoice, lowerAlph);
+      randomCho = lowerAlph[Math.floor(Math.random()*lowerAlph.length)];
+      passwordString += randomCho;
+    }
  
   // This gives prompt upper case letter choice, adds 1 random one to passwordString, and the whole array to userChoice 
-  let upperOpt = confirm("Do you want upper case characters?")
-  if (upperOpt === true){
-    userChoice.push.apply(userChoice, upperAlph);
-    randomCho = upperAlph[Math.floor(Math.random()*upperAlph.length)];
-    passwordString += randomCho;
-  }
+    let upperOpt = confirm("Do you want upper case characters?")
+    if (upperOpt === true){
+      userChoice.push.apply(userChoice, upperAlph);
+      randomCho = upperAlph[Math.floor(Math.random()*upperAlph.length)];
+      passwordString += randomCho;
+    }
 
  // This gives prompt number choice, adds 1 random one to passwordString, and the whole array to userChoice  
-  let numOpt = confirm("Do you want to use numbers?")
-  if (numOpt === true){
-    userChoice.push.apply(userChoice, number);
-    randomCho = number[Math.floor(Math.random()*number.length)];
-    passwordString += randomCho;
-  }
+    let numOpt = confirm("Do you want to use numbers?")
+    if (numOpt === true){
+      userChoice.push.apply(userChoice, number);
+      randomCho = number[Math.floor(Math.random()*number.length)];
+      passwordString += randomCho;
+    }
  
   // This does the math for the difference of the passLength - passwordString. then makes random choices on the
   // userChoice array which has all other arrays inside of it until the passLength and passwordString are the same
   // length after adding 1 random character to password string it repeats until the difference is 0.
-  let numCharLeft = parseInt(passLength) - passwordString.length;
-  for (let i = 0; i < numCharLeft; i++){
-    randomCho = userChoice[Math.floor(Math.random()*userChoice.length)];
-    passwordString += randomCho;
-  }
+    let numCharLeft = parseInt(passLength) - passwordString.length;
+    for (let i = 0; i < numCharLeft; i++){
+      randomCho = userChoice[Math.floor(Math.random()*userChoice.length)];
+      passwordString += randomCho;
+    }
 
   return passwordString;
 }
