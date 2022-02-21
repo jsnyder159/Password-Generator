@@ -31,9 +31,6 @@ function userData() {
     randomCho = special[Math.floor(Math.random()*special.length)];
     passwordString += randomCho;
   }
-  
-  console.log(userChoice)
-  console.log(passwordString)
 
    // This gives prompt lower case letter choice, adds 1 random one to passwordString, and the whole array to userChoice
   let lowerOpt = confirm("Do you want lower case characters?")
@@ -42,12 +39,7 @@ function userData() {
     randomCho = lowerAlph[Math.floor(Math.random()*lowerAlph.length)];
     passwordString += randomCho;
   }
-  
-  console.log(userChoice)
-  console.log(passwordString)
 
-
- 
   // This gives prompt upper case letter choice, adds 1 random one to passwordString, and the whole array to userChoice 
   let upperOpt = confirm("Do you want upper case characters?")
   if (upperOpt === true){
@@ -56,9 +48,6 @@ function userData() {
     passwordString += randomCho;
   }
 
-  
-  console.log(userChoice)
-  console.log(passwordString)
  // This gives prompt number choice, adds 1 random one to passwordString, and the whole array to userChoice  
   let numOpt = confirm("Do you want to use numbers?")
   if (numOpt === true){
@@ -66,10 +55,14 @@ function userData() {
     randomCho = number[Math.floor(Math.random()*number.length)];
     passwordString += randomCho;
   }
-  
-  console.log(userChoice)
-  console.log(passwordString)
- 
+
+  // Stops the code from running the for loop if no selections were made,
+  // and makes user attempt to regenerate password.
+  if (passwordString === ""){
+    alert("Atleast one option must be selected.")
+    return null
+  }
+
   // This does the math for the difference of the passLength - passwordString. then makes random choices on the
   // userChoice array which has all other arrays inside of it until the passLength and passwordString are the same
   // length after adding 1 random character to password string it repeats until the difference is 0.
@@ -78,6 +71,11 @@ function userData() {
     randomCho = userChoice[Math.floor(Math.random()*userChoice.length)];
     passwordString += randomCho;
   }
+
+ 
+
+
+
 
   // return passwordString;
 }
