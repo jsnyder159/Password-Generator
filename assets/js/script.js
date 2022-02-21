@@ -14,7 +14,7 @@ let passwordString = "";
 function userData() {
   //This gives prompt for length of password and will not move forward if Min/Max isn't met
 
-  let = passLength = prompt("Please enter the amount of chararacters required.  Betweem 8 and 128.");
+  let passLength = prompt("Please enter the amount of chararacters required.  Betweem 8 and 128.");
   if (passLength < min) {
     alert("Password must be atleast 8 characters.")
     return null
@@ -23,9 +23,6 @@ function userData() {
     alert("Password must be less than 128 characters.")
     return null
   }
-
-  
-
 
   // This gives prompt special char choice, adds 1 random one to passwordString, and the whole array to userChoice
   let specOpt = confirm("Do you want special characters?")
