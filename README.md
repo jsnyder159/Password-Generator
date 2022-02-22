@@ -4,7 +4,7 @@
 
 !["Working password generator."](./assets/images/working-gen.PNG)
 
-
+## Description
 Task: I was given the task to write the javascript code for for a random pasword generator as an employee with access to sensitive data.  This will help
 create a stronger password and provide greater security.
 
