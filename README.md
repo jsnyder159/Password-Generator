@@ -30,3 +30,5 @@ length of the password (with min/max values in window). If the parameters requir
 - Once completed the password meeting the 1 of each selected option and length selected with randomly generated characters is displayed inside the box on the screen.
 
 - Code added so that if no options were made an alert is given, not allowing the for loop to be ran, and the generate password button needing to be selected again to make the proper amount of choices to generate the password.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
