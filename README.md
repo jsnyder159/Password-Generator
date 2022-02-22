@@ -2,6 +2,8 @@
 
 [Password Generator Page](https://jsnyder159.github.io/Password-Generator/)
 
+!["Working password generator."](./assets/images/working-gen.PNG)
+
 
 Task: I was given the task to write the javascript code for for a random pasword generator as an employee with access to sensitive data.  This will help
 create a stronger password and provide greater security.
@@ -28,5 +30,3 @@ length of the password (with min/max values in window). If the parameters requir
 - Once completed the password meeting the 1 of each selected option and length selected with randomly generated characters is displayed inside the box on the screen.
 
 - Code added so that if no options were made an alert is given, not allowing the for loop to be ran, and the generate password button needing to be selected again to make the proper amount of choices to generate the password.
-
-!["Working password generator."](./assets/images/working-gen.PNG)
