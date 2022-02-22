@@ -1,4 +1,4 @@
-#H1 Password Generator Project.
+# Password Generator Project.
 
 [Password Generator Page](https://jsnyder159.github.io/Password-Generator/)
 
